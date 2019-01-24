@@ -1,0 +1,182 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: '微软雅黑',Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 100%
+}
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: 24px;
+  color: #969697;
+}
+.app-container {
+  padding: 20px;
+}
+//.el-button:focus, .el-button:hover {
+//  color: #F49819;
+//  border-color: #F49819;
+//  background-color: #fff;
+//}
+.el-button--primary:focus, .el-button--primary:hover {
+  color: #fff;
+  background-color: #F7B75E;
+  border-color: #F7B75E;
+}
+ .el-button--primary {
+    color: #fff;
+    background-color: #F49819;
+    border-color: #F49819;
+}
+.noloOrangeBtn {
+  background: #F49819;
+  border: 1px solid #F49819;
+}
+
+.noloOrangeBtn:hover {
+  background: #F49819;
+  border: 1px solid #F49819;
+  opacity: .7;
+}
+
+.noloOrangeBtn:focus {
+  background: #F49819;
+  border: 1px solid #F49819;
+  opacity: .7;
+}
+
+.hollowBtn {
+  background: #fff;
+  border: 2px solid #F49819;
+  color: #F49819;
+}
+
+.hollowBtn:hover {
+  background: #F49819;
+  color: #fff;
+  border: 2px solid #F49819;
+}
+
+.hollowBtn:focus {
+  background: #F49819;
+  color: #fff;
+  border: 2px solid #F49819;
+  opacity: .7;
+}
+
+.hollowCancelBtn {
+  background: #fff;
+  border: 1px solid #F49819;
+  color: #F49819;
+}
+.hollowCancelBtn:hover {
+  background: #FCF5E8;
+  color: #F49819;
+  border: 1px solid #F49819;
+}
+.hollowCancelBtn:focus {
+  background: #fff;
+  color: #F49819;
+  border: 1px solid #F49819;
+  opacity: .7;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #F49819;
+}
+.el-upload--picture-card:hover, .el-upload:focus {
+  border-color: #F49819;
+  color: #F49819;
+}
+.avatar-uploader {
+  display: inline-block;
+}
+
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+  border-color: #F49819;
+}
+
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center;
+}
